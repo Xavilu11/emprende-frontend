@@ -1,0 +1,50 @@
+name: emprende
+description: "Compras aquí, apoyas allá"
+version: 1.0.0+1
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  # Base de la app
+  provider: ^6.1.1
+  http: ^1.2.0
+  shared_preferences: ^2.2.2
+  url_launcher: ^6.2.2
+  # Mapa y ubicación
+  latlong2: ^0.9.0
+  flutter_map: ^6.1.0
+  permission_handler: ^11.1.0
+  geolocator: ^11.1.0
+  # Cámara y fotos
+  image_picker: ^1.0.7
+  google_sign_in: ^7.2.0
+  # Variables de entorno
+  flutter_dotenv: ^5.1.0
+  firebase_core: ^4.15.0
+  firebase_auth: ^6.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  # Generador de íconos
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  # Mis imágenes 
+  assets:
+    - assets/favicon_emprende.png
+    - assets/logo_emprende.png
+    - .env
+
+# Configuración del ícono de la app — SOLO UNA VEZ
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/favicon_emprende.png" 
+  adaptive_icon_background: "#603815"
+  adaptive_icon_foreground: "assets/favicon_emprende.png"
